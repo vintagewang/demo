@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     char                buf[128+1] =  {0};
 
     if (argc != 2) {
-        printf("Useage: %s 要发送的数据\n", argv[0]);
+        printf("Useage: %s data\n", argv[0]);
         return  -1;
     }
 
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 
     code = read(sockfd, buf, sizeof(buf) - 1);
 
-    printf("应答数据: [%s]\n", buf);
+    printf("Response: [%s]\n", buf);
 
     close(sockfd);
 

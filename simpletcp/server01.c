@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
 
         code = read(connfd, buf, sizeof(buf) - 1);
 
-        printf("%-3d接收到数据: [%s]\n", connfd, buf);
+        printf("%-3dReceive data: [%s]\n", connfd, buf);
 
         if (code > 0)
             code = write(connfd, str_to_upper(buf), strlen(buf));
