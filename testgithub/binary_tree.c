@@ -3,6 +3,8 @@
 #include <string.h>
 #include <errno.h>
 
+// 增加一段中文
+
 typedef struct Btree_node_t{
     char                    data;
     struct  Btree_node_t    *left_child;
